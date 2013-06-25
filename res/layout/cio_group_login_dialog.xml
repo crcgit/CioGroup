@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="30dp"
+        android:text="Please enter your email address. Be sure it matches the email address on record." />
+
+    <EditText
+        android:id="@+id/cioGroup_loginDialog_loginText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress|textNoSuggestions" >
+
+        <requestFocus />
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/cioGroup_loginDialog_rememberMeCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember me" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/cioGroup_loginDialog_cancelButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:minWidth="100dp"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/cioGroup_loginDialog_okButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="100dp"
+            android:text="OK" />
+
+    </LinearLayout>
+
+</LinearLayout>

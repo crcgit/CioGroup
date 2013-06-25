@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/cioGroup_contactsRowView_imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/cioGroup_contactsRowView_imageView"
+        android:layout_alignTop="@id/cioGroup_contactsRowView_imageView"
+        android:layout_toRightOf="@id/cioGroup_contactsRowView_imageView"
+        android:gravity="center|left"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/cioGroup_contactsRowView_nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/cioGroup_contactsRowView_locationFromTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location From"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cioGroup_contactsRowView_editButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/cioGroup_contactsRowView_imageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/cioGroup_contactsRowView_imageView"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:maxHeight="50dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Edit Info" />
+
+</RelativeLayout>
